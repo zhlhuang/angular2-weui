@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Angular 2  for weui</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="/node_modules/weui/dist/style/weui.css">
+    <link rel="stylesheet" href="/node_modules/weui/dist/example/example.css">
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills, in this exact order -->
+    <script src="/node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="/node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="/node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+    <script src="/node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="/node_modules/systemjs/dist/system.src.js"></script>
+    <script src="/node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="/node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="/node_modules/angular2/bundles/router.dev.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script>
+    System.config({
+        packages: {
+            '/application': { //注意这个application 是跟下面的 application/main 相关的
+                format: 'register',
+                defaultExtension: 'js'
+            }
+        }
+    });
+    System.import('/application/main')
+        .then(null, console.error.bind(console));
+    </script>
+</head>
+ <base href="/">
+<!-- 3. Display the application -->
+
+<body>
+    <my-app>loading</my-app>
+</body>
+
+</html>
