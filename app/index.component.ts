@@ -8,4 +8,8 @@ import {ROUTER_DIRECTIVES} from 'angular2/router';
 
 })
 export class IndexComponent implements OnInit  {
+
+	ngOnInit (){
+
+	}
 }

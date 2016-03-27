@@ -1,1 +1,23 @@
-app.button.html
+    <div class="hd">
+        <h1 class="page_title">Button</h1>
+    </div>
+    <div class="bd spacing">
+    	<!-- 这里用单引号证明是字符串 -->
+    	<!-- ps: angular在渲染的时候，会出现多一个 div 元素在外面 -->
+    	<div ui-button [text]="'按钮'" [type]="'primary'">loading</div>
+    	<div ui-button class="m_top" [text]="'按钮'" [type]="'primary'" [disabled]='true' >loading</div>
+
+    	<div ui-button class="m_top" [text]="'确认'" [type]="'warn'">loading</div>
+        <div ui-button class="m_top" [text]="'确认'" [type]="'warn'" [disabled]='true'>loading</div>
+
+    	<div ui-button class="m_top" [text]="'按钮'" >loading</div>
+    	<div ui-button class="m_top" [text]="'按钮'"  [disabled]='true' >loading</div>
+
+        <div class="button_sp_area">
+            <div ui-button class="m_top" [text]="'按钮'" [plain]="true" >loading</div>
+            <div ui-button class="m_top" [text]="'按钮'" [type]="'primary'" [plain]="true" >loading</div>
+
+			<a ui-button [text]="'按钮'" [type]="'primary'" [size]="'small'"  >loading</a>
+			<a ui-button [text]="'按钮'" [size]="'small'"  >loading</a>
+        </div>
+    </div>
