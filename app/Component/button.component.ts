@@ -1,3 +1,12 @@
+/**
+ * 按钮组件
+ * @param text 显示文本
+ * @param type 类型：（default，primary，warn）
+ * @param plain 背景色填充
+ * @param size 按钮大小，默认，small
+ * @param disabled 无效按钮
+ */
+
 import {Component, OnInit} from 'angular2/core';
 
 @Component({
