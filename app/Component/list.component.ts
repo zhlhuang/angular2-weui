@@ -14,7 +14,7 @@ import {Component, OnInit} from 'angular2/core';
 
 @Component({
     selector: 'ui-list',
-    template: `<div [ngClass]="typeClass">
+    template: `<div class="weui_cells_title">{{title}}</div><div [ngClass]="typeClass">
     <a class="weui_cell" *ngFor="#d of datas" href="{{d.url}}">
     <div class="weui_cell_hd" *ngIf="d.img">
     <img src="{{d.img}}" alt="" [ngStyle]="imgStyle" >
@@ -25,13 +25,14 @@ import {Component, OnInit} from 'angular2/core';
     <div *ngIf="d.ft" class="weui_cell_ft">{{d.ft}}</div>
     </a>
     </div>`,
-    inputs:['type','datas','imgStyle'],
+    inputs:['title','type','datas','imgStyle'],
     styles:[`.weui_cells a.weui_cell {color: inherit;} .weui_cells{margin-top:0rem} .weui_cell_hd img{imgStyle}`]
 })
 
 export class ListComponent implements OnInit {
     type='';
     typeClass={};
+    title='带说明的列表项';
     imgStyle={
         width:'',
         marginRight:'5px',
