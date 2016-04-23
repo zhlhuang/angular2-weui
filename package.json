@@ -26,5 +26,20 @@
     "lite-server": "^2.1.0",
     "typescript": "^1.8.2",
     "typings": "^0.6.8"
-  }
+  },
+  "description": "angular2 for weui",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhlhuang/angular2-weui.git"
+  },
+  "keywords": [
+    "angular2",
+    "weui",
+    "typescript"
+  ],
+  "bugs": {
+    "url": "https://github.com/zhlhuang/angular2-weui/issues"
+  },
+  "homepage": "https://github.com/zhlhuang/angular2-weui#readme"
 }
