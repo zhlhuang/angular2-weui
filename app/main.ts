@@ -3,6 +3,7 @@ import {Component} from 'angular2/core';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
 import {IndexComponent} from './index.component';
 import {appButtonComponent} from './app-button.component';
+import {appCellComponent} from './app-cell.component';
 
 @Component({
 	selector: 'my-app',
@@ -13,15 +14,20 @@ import {appButtonComponent} from './app-button.component';
 
 @RouteConfig([
 	{
-	path: '/index',
-			name: 'Index',
-			component: IndexComponent,
-			useAsDefault: true //默认路由
+		path: '/index',
+		name: 'Index',
+		component: IndexComponent,
+		useAsDefault: true //默认路由
 	},
 	{
-	path: '/button',
-    name: 'Button',
-    component: appButtonComponent,
+		path: '/button',
+		name: 'Button',
+		component: appButtonComponent,
+	},
+	{
+		path: '/cell',
+		name: 'Cell',
+		component: appCellComponent,
 	}
 ])
 
